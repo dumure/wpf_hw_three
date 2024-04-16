@@ -5,48 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf_hw_three"
         mc:Ignorable="d"
-        Title="MainWindow" Height="510" Width="300" MaxHeight="510" MinHeight="510" MaxWidth="300" MinWidth="300">
+        Title="MainWindow" Height="500" Width="300" MinHeight="500" MinWidth="300">
     <Grid Background="#3b3b3b">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
         <Label HorizontalAlignment="Left" Content="= Standart" FontSize="20" Foreground="White"/>
         <Label Grid.Row="1" HorizontalAlignment="Right" Content="0" FontSize="30" Foreground="White"/>
-        <StackPanel Orientation="Horizontal" Grid.Row="2">
-            <Button BorderThickness="0" Content="MC" Background="#3b3b3b" Foreground="White" Width="57"/> 
-            <Button BorderThickness="0" Content="MR" Background="#3b3b3b" Foreground="White" Width="57"/>
-            <Button BorderThickness="0" Content="M+" Background="#3b3b3b" Foreground="White" Width="57"/>
-            <Button BorderThickness="0" Content="M-" Background="#3b3b3b" Foreground="White" Width="57"/>
-            <Button BorderThickness="0" Content="M" Background="#3b3b3b" Foreground="White"  Width="57"/>
-        </StackPanel>
-        <WrapPanel Grid.Row="3">
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="%" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="√" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="x²" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="1/x" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="CE" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="C" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="⌫" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="/" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="7" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="8" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="9" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="*" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="4" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="5" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="6" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="-" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="1" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="2" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="3" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="+" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="+/-" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="0" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="," FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-            <Button Width="71" Height="57" BorderBrush="#3b3b3b" BorderThickness="3" Content="=" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
-        </WrapPanel>
+        <UniformGrid Grid.Row="2" Columns="5">
+            <Button BorderThickness="0" Content="MC" Background="#3b3b3b" Foreground="White"/> 
+            <Button BorderThickness="0" Content="MR" Background="#3b3b3b" Foreground="White"/>
+            <Button BorderThickness="0" Content="M+" Background="#3b3b3b" Foreground="White"/>
+            <Button BorderThickness="0" Content="M-" Background="#3b3b3b" Foreground="White"/>
+            <Button BorderThickness="0" Content="M" Background="#3b3b3b" Foreground="White" />
+        </UniformGrid>
+        <UniformGrid Grid.Row="3" Rows="6" Columns="4">
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="%" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="√" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="x²" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="1/x" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="CE" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="C" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="⌫" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="/" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="7" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="8" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="9" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="*" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="4" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="5" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="6" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="-" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="1" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="2" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="3" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="+" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="+/-" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="0" FontSize="25" FontWeight="Bold" Foreground="White" Background="#1f1f1f"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="," FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+            <Button BorderBrush="#3b3b3b" BorderThickness="3" Content="=" FontSize="25" FontWeight="Bold" Foreground="White" Background="#2e2e2e"/>
+        </UniformGrid>
     </Grid>
 </Window>
